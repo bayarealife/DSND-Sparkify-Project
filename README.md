@@ -44,7 +44,9 @@ Data Description
 The data files are in json format.
 root
  |-- artist: string (nullable = true)
+ 
  |-- auth: string (nullable = true)
+ 
  |-- firstName: string (nullable = true)
  |-- gender: string (nullable = true)
  |-- itemInSession: long (nullable = true)
