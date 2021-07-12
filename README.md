@@ -46,12 +46,12 @@ In order to run the script, download the files (keep the folder hierarchy as is)
 
 
 ## Summary - Result of the Analysis
-The data evaluation showed in most cases, the non-churn users were more active users (higher counts of events recorded).  The gender and the service level (free/paid) also showed difference in churn and non-churn users.  So I used all variables except a few that were not relevant to user activities (i.e. Error page) and scaled them.
-Then I have tried several algorithms - Logistic Regression, Decision Tree, Random Forest, Gradient-Boosted Tree Classifier and Linear SVC.  
-Linear SVC produced the best accuracy rate, however it did not predict any True Positive, meaning it did not predict any churn users.  The accuracy was 100% based on True Negatives.  The churn rate in the data is 23% so the model should predict the number of churn users as close to it as possible.
+The data evaluation showed in most cases, the non-churn users were more active users (higher counts of events recorded).  The gender and the service level (free/paid) also showed difference in churn and non-churn users.  Then I removed features that were not relevant to user activities (i.e. Error page) and scaled them.
+Then I have tried a few algorithms - Logistic Regression, Decision Tree, Random Forest.  
+Linear SVC had high false positive rate.  Decision Tree had no True Positives which is the most important prediction for this project.  Random Forest detected one True Positive and zero False Positives and was the best model.  I tuned the Random Forest model, and it did not show any improvement.
 
 
-Data Description
+## Data Description
 The data files are in json format.
 
 	root
@@ -92,3 +92,6 @@ The data files are in json format.
 
 	 |-- userId: string (nullable = true)
 
+
+## Reference
+https://spark.apache.org/docs/latest/ml-features
