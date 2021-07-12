@@ -46,9 +46,9 @@ In order to run the script, download the files (keep the folder hierarchy as is)
 
 
 ## Summary - Result of the Analysis
-The data evaluation showed in most cases, the non-churn users were more active users (higher counts of events recorded).  Also gender and the service level (free/paid) also showed difference in churn and non-churn users.  So I used all variables except a few that were not relevant to user activities (i.e. Error page) and scaled them.
+The data evaluation showed in most cases, the non-churn users were more active users (higher counts of events recorded).  The gender and the service level (free/paid) also showed difference in churn and non-churn users.  So I used all variables except a few that were not relevant to user activities (i.e. Error page) and scaled them.
 Then I have tried several algorithms - Logistic Regression, Decision Tree, Random Forest, Gradient-Boosted Tree Classifier and Linear SVC.  
-Linear SVC produced the best accuracy rate.  Tuning the model using key hyperparameters did not improve the accuracy rate.  The end result was 80% accuracy rate, predicting 37 out of 46 users in the test data.
+Linear SVC produced the best accuracy rate, however it did not predict any True Positive, meaning it did not predict any churn users.  The accuracy was 100% based on True Negatives.  The churn rate in the data is 23% so the model should predict the number of churn users as close to it as possible.
 
 
 Data Description
