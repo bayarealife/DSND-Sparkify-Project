@@ -26,6 +26,8 @@ DSND-Sparkify-Project
 	|--Sparkify.html -- HTML format output of Sparkify.ipynb
 	
 	|--README.md
+	
+	|--.gitattributes-- Configuration file or Git LFS
 
 
 ## About the Python Script
