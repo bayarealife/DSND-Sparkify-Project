@@ -7,7 +7,7 @@ Preventing or reducing churn is very important for business success.  So I would
 
 I have shared the results of my experiment in a blog published at this link: 
 
-https://kyoko-desiderio.medium.com/seattle-airbnb-top-listings-trends-6b3b034acd12
+https://kyoko-desiderio.medium.com/sparkify-churn-user-prediction-model-with-pyspark-8ffa9eaad9f2
 
 
 ## Motivation
