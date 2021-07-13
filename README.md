@@ -48,7 +48,7 @@ In order to run the script, download the files (keep the folder hierarchy as is)
 ## Summary - Result of the Analysis
 The data evaluation showed in most cases, the non-churn users were more active users (higher counts of events recorded).  The gender and the service level (free/paid) also showed difference in churn and non-churn users.  Then I removed features that were not relevant to user activities (i.e. Error page) and scaled them.
 Then I have tried a few algorithms - Logistic Regression, Decision Tree, Random Forest.  
-Linear SVC had high false positive rate.  Decision Tree had no True Positives which is the most important prediction for this project.  Random Forest detected one True Positive and zero False Positives and was the best model.  I tuned the Random Forest model, and it did not show any improvement.
+Linear SVC had high false positive rate.  Decision Tree had 0% true positive rate which is the most important prediction for this project.  Random Forest 18% true positive rate and 0% false positive rate after tuning and was the best model.
 
 
 ## Data Description
